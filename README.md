@@ -1,2 +1,4 @@
 # sKits
-mc test code
+Just my mc test code to be shared between workplaces
+
+jaypeetee
