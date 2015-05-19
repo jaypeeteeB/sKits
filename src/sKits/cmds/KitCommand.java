@@ -30,6 +30,7 @@ public class KitCommand implements CommandExecutor {
 			return true;
 		} else if (args[0].equalsIgnoreCase("mine")) {
 			player.getInventory().addItem(new ItemStack(Material.DIAMOND_PICKAXE, 1));
+			player.getInventory().addItem(new ItemStack(Material.TORCH, 8));
 			return true;
 		} else if (args[0].equalsIgnoreCase("wood")) {
 			player.getInventory().addItem(new ItemStack(Material.DIAMOND_AXE, 1));
