@@ -23,9 +23,7 @@ public class KitCommand implements CommandExecutor {
 			player.getInventory().setLeggings(new ItemStack(Material.IRON_LEGGINGS,1));
 			player.getInventory().setBoots(new ItemStack(Material.IRON_BOOTS,1));
 			player.getInventory().addItem(new ItemStack(Material.DIAMOND_SWORD, 1));
-			player.getInventory().addItem(new ItemStack(Material.MUSHROOM_SOUP, 1));
-			player.getInventory().addItem(new ItemStack(Material.MUSHROOM_SOUP, 1));
-			
+						
 			player.sendMessage(ChatColor.DARK_GREEN + "You have chosen the basic pvp kit!");
 			return true;
 		} else if (args[0].equalsIgnoreCase("mine")) {

@@ -19,7 +19,7 @@ public class InventorListener implements Listener {
 				event.getAction() == Action.RIGHT_CLICK_BLOCK ) {
 	
 			if (mat == Material.MUSHROOM_SOUP) {
-				ItemStack bowl = new ItemStack(Material.MUSHROOM_SOUP, 1);
+				ItemStack bowl = new ItemStack(Material.BOWL, 1);
 				
 				int food = player.getFoodLevel();
 				if (food != 20) {
@@ -33,6 +33,7 @@ public class InventorListener implements Listener {
 					player.setHealth(nhealth);
 				}
 				
+				event.setCancelled(true);
 				player.getInventory().setItem(player.getInventory().getHeldItemSlot(),bowl);
 				return;
 			}

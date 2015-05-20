@@ -1,9 +1,12 @@
 name: sKits
 main: sKits.main.sKitmain
-version: 1
+version: 2
 website: 
 author: jaypeetee
 commands:
+  soup:
+    description: Gives you a stack of soup
+    usage: /<command>
   kit:
     description: Gives a basic kit
     usage: /<command> {pvp|mine|wood}
